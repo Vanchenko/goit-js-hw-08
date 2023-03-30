@@ -7,15 +7,11 @@ const usdate = {
     message: "",
 };
 const pp = JSON.parse(localStorage.getItem("feedback-form-state"));
-console.log(pp)
 
 if (pp) {
-    console.log("true")
     usdate.email = pp.email;
     usdate.message = pp.message;
     };
-
-console.log(usdate);
 
 formEl.elements[0].value = usdate.email;
 formEl.elements[1].value = usdate.message;
